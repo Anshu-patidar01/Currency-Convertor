@@ -40,12 +40,6 @@ btn.addEventListener("click", (e) => {
   e.preventDefault();
   let amount = document.querySelector(".amount input");
   let amtval = amount.value;
-  amtval = amtval * 1;
-  if (isNaN(amtval)) {
-    alert("");
-    amtval = 1;
-    amount.value = 1;
-  }
   if (amtval === "" || amtval < 0) {
     amtval = 1;
     amount.value = "1";
@@ -65,7 +59,7 @@ const caluculateAmount = (amount) => {
     const cnVal = `${amount}${from} = ${amount * rjson[from][to]}${to} `;
     msg.innerHTML = `
       <h3>${cnVal}</h3>
-      <p>1${from} = ${rjson[from][to]}${to} </p>
+      <p>1 ${from} = ${rjson[from][to]} ${to} </p>
     `;
   })();
 };
