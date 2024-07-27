@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <nav>
+      <h1>Currency check</h1>
+      <i class="fa-solid fa-bars"></i>
+    </nav>
+    <div class="outer-container">
+      <div class="container">
+        <h2>Currency Convertore</h2>
+
+        <form action="">
+          <div class="amount">
+            <p>Enter Amount</p>
+            <input
+              type="text"
+              value=""
+              name="currency"
+              placeholder="Enter Amount"
+            />
+          </div>
+          <div class="dropdown">
+            <div class="from">
+              <p>from</p>
+              <div class="selectioon-container">
+                <select name="from"></select>
+              </div>
+            </div>
+            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+            <div class="to">
+              <p>to</p>
+              <div class="selectioon-container">
+                <select name="to"></select>
+              </div>
+            </div>
+          </div>
+          <div class="contryName">
+            <p class="first-contryName"></p>
+            <p class="second-contryName"></p>
+          </div>
+          <div class="msg">
+            <p class="p-color">converted currency</p>
+          </div>
+
+          <button type="submit" id="btn">Get Exchange Rate</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer">
+      <footer class="">
+        <ul class="">
+          <li class="nav-item">
+            <a href="#" class="">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="">Features</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="">FAQs</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="">About</a>
+          </li>
+        </ul>
+        <!-- <hr /> -->
+        <p class="">
+          Copyright© 2024 Company >Developed by :
+          <span class="myname">ANSHU PATIDAR</span>
+        </p>
+      </footer>
+    </div>
+
+    <script src="app.js"></script>
+    <!-- <script src="content.js"></script> -->
+  </body>
+</html>
